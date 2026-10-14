@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 145878967}
   - component: {fileID: 145878966}
   - component: {fileID: 145878965}
+  - component: {fileID: 145878968}
   m_Layer: 0
   m_Name: Zone
   m_TagString: Untagged
@@ -224,6 +225,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 145878963}
   m_Mesh: {fileID: 0}
+--- !u!114 &145878968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 145878963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc9dab40bb1255f4194f3a7309f28262, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TerraForma.Core.ZoneController
+  settings: {fileID: 11400000, guid: a296bfcee38c59647bd877f696b29b59, type: 2}
+  visual: {fileID: 145878965}
+  halfSize: 10
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
