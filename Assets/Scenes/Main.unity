@@ -149,7 +149,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -240,6 +240,8 @@ MonoBehaviour:
   settings: {fileID: 11400000, guid: a296bfcee38c59647bd877f696b29b59, type: 2}
   visual: {fileID: 145878965}
   halfSize: 10
+  accumulation: {fileID: 11400000, guid: f6aac5b035b58c04e9bb9df33840119b, type: 2}
+  surfaceView: {fileID: 1691980658}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -327,7 +329,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0.42261827, y: 0, z: 0, w: 0.9063079}
-  m_LocalPosition: {x: 0, y: 12, z: -10}
+  m_LocalPosition: {x: 0, y: 16.11, z: -19.57}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -565,6 +567,7 @@ GameObject:
   - component: {fileID: 1691980656}
   - component: {fileID: 1691980655}
   - component: {fileID: 1691980654}
+  - component: {fileID: 1691980658}
   m_Layer: 0
   m_Name: Surface
   m_TagString: Untagged
@@ -661,11 +664,25 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1691980658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691980653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8febfd67928eb5345aeb6b4cc6f82508, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TerraForma.View.SurfaceMeshView
+  material: {fileID: 2100000, guid: be03349b4b0f82540a9e4a38814e468e, type: 2}
+  chunkCells: 32
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
