@@ -11,6 +11,7 @@ namespace TerraForma.Core
         [SerializeField] private ZoneVisual visual;
         [SerializeField, Tooltip("Половина стороны поверхности")] private float halfSize = 10f;
         [SerializeField] private AccumulationSettings accumulation;
+        [SerializeField] private SurfaceMeshView surfaceView;
         
         private HeightField _field;
         private MaterialAccumulator _accumulator;
@@ -28,6 +29,7 @@ namespace TerraForma.Core
             _field = new HeightField(accumulation.resolution, accumulation.cellSize,
                 -Vector2.one * ((accumulation.resolution - 1) * accumulation.cellSize * 0.5f));
             _accumulator = new MaterialAccumulator(_field, accumulation);
+            surfaceView.Init(_field);
             
             _input = new KeyboardZoneInput();
             _mover = new ZoneMover(settings, _field.Bounds, Vector2.zero);
